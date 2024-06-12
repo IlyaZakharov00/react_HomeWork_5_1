@@ -14,7 +14,7 @@ export const Card = (props: TProps) => {
 
     return (
     <div className="card" style={{width: "18rem"}}>
-        {props.children? props.children : <img src = {src} className = "card-img-top" alt = "Какая - то картинка :)"></img>}
+        {src? <img src = {src} className = "card-img-top" alt = "Какая - то картинка :)"></img> : props.children }
         <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{text}</p>
